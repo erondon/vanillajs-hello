@@ -8,7 +8,7 @@ import "../style/index.scss";
 
 window.onload = function() {
   let who = ["the dog", "my granma", "his turtle", "my bird"];
-  let what = ["eat", "pissed", "crushed", "broked"];
+  let what = ["ate", "pissed", "crushed", "broke"];
   let when = [
     "before the class",
     "right in time",
