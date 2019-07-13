@@ -17,11 +17,17 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  let randWho = Math.floor(Math.random() * who.length);
-  let randWhat = Math.floor(Math.random() * what.length);
-  let randWhen = Math.floor(Math.random() * when.length);
+  function randWord(word) {
+    let randEx = Math.floor(Math.random() * word.length);
+    return randEx;
+  }
 
-  let sentence = who[randWho] + " " + what[randWhat] + " " + when[randWhen];
+  let sentence =
+    who[randWord(who)] +
+    "  " +
+    what[randWord(what)] +
+    "  " +
+    when[randWord(when)];
 
   document.getElementById("excuse").innerHTML = sentence;
 };
